@@ -2,3 +2,13 @@
 2, api             HTTP/multiple clients
 3, dashboard       HTTPS
 
+-------------------
+
+http://www.game-stats.info
+https://www.api.game-stats.info
+https://www.dashboard.game-stats.info
+https://www.admin.game-stats.info
+
+-------------------
+
+常用查询异步实现，非常用同步实现（需要等待)
