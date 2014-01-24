@@ -5,7 +5,7 @@ class App < ActiveRecord::Base
 
   def self.generate_key_and_secret
     key = SecureRandom.hex(16)
-    while !App.find_by_key(key)
+    while App.count > 0 && !App.find_by_key(key)
       key = SecureRandom.hex(16)
     end
 
