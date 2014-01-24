@@ -2,7 +2,9 @@
  -  key stats investigation
  -  fake data input
  -  frontend frameworks finialization
- -  amazon environment setup
+ -  amazon environment setup / domain name setup
  -  app config / secret
  -  account management
  -  website refinement
+ -  deploy script setup
+ -  https support for credential data

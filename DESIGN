@@ -1,0 +1,4 @@
+1, static website  HTTP
+2, api             HTTP/multiple clients
+3, dashboard       HTTPS
+
