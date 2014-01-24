@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @player.player_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @player.name %>
+</p>
+
+<p>
+  <strong>Install at:</strong>
+  <%= @player.install_at %>
+</p>
+
+<p>
+  <strong>Locale:</strong>
+  <%= @player.locale %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @player.language %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @player.country %>
+</p>
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>

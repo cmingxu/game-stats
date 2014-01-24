@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @fte.player_id %>
+</p>
+
+<p>
+  <strong>Step:</strong>
+  <%= @fte.step %>
+</p>
+
+<p>
+  <strong>Pass time:</strong>
+  <%= @fte.pass_time %>
+</p>
+
+<p>
+  <strong>App:</strong>
+  <%= @fte.app_id %>
+</p>
+
+<%= link_to 'Edit', edit_fte_path(@fte) %> |
+<%= link_to 'Back', ftes_path %>

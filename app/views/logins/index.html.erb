@@ -1,0 +1,35 @@
+<h1>Listing logins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>App</th>
+      <th>Login at</th>
+      <th>Locale</th>
+      <th>Country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @logins.each do |login| %>
+      <tr>
+        <td><%= login.player_id %></td>
+        <td><%= login.app_id %></td>
+        <td><%= login.login_at %></td>
+        <td><%= login.locale %></td>
+        <td><%= login.country %></td>
+        <td><%= link_to 'Show', login %></td>
+        <td><%= link_to 'Edit', edit_login_path(login) %></td>
+        <td><%= link_to 'Destroy', login, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Login', new_login_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_id: 1
+  app_id: 1
+  login_at: MyString
+  locale: MyString
+  country: MyString
+
+two:
+  player_id: 1
+  app_id: 1
+  login_at: MyString
+  locale: MyString
+  country: MyString

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_id: 1
+  name: MyString
+  install_at: 2014-01-24 10:19:28
+  locale: MyString
+  language: MyString
+  country: MyString
+
+two:
+  player_id: 1
+  name: MyString
+  install_at: 2014-01-24 10:19:28
+  locale: MyString
+  language: MyString
+  country: MyString

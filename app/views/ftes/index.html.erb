@@ -1,0 +1,33 @@
+<h1>Listing ftes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Step</th>
+      <th>Pass time</th>
+      <th>App</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ftes.each do |fte| %>
+      <tr>
+        <td><%= fte.player_id %></td>
+        <td><%= fte.step %></td>
+        <td><%= fte.pass_time %></td>
+        <td><%= fte.app_id %></td>
+        <td><%= link_to 'Show', fte %></td>
+        <td><%= link_to 'Edit', edit_fte_path(fte) %></td>
+        <td><%= link_to 'Destroy', fte, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fte', new_fte_path %>

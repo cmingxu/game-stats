@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @payment.amount %>
+</p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @payment.player_id %>
+</p>
+
+<p>
+  <strong>App:</strong>
+  <%= @payment.app_id %>
+</p>
+
+<p>
+  <strong>Locale:</strong>
+  <%= @payment.locale %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @payment.country %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>

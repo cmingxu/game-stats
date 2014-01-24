@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @login.player_id %>
+</p>
+
+<p>
+  <strong>App:</strong>
+  <%= @login.app_id %>
+</p>
+
+<p>
+  <strong>Login at:</strong>
+  <%= @login.login_at %>
+</p>
+
+<p>
+  <strong>Locale:</strong>
+  <%= @login.locale %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @login.country %>
+</p>
+
+<%= link_to 'Edit', edit_login_path(@login) %> |
+<%= link_to 'Back', logins_path %>
