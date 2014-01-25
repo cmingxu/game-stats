@@ -1,5 +1,6 @@
 GameStats::Application.routes.draw do
 
+  root "welcome#index"
   resources :apps do
     resources :payments
     resources :players

@@ -1,0 +1,19 @@
+%p#notice= notice
+%p
+  %strong Amount:
+  = @payment.amount
+%p
+  %strong Player:
+  = @payment.player_id
+%p
+  %strong App:
+  = @payment.app_id
+%p
+  %strong Locale:
+  = @payment.locale
+%p
+  %strong Country:
+  = @payment.country
+= link_to 'Edit', edit_payment_path(@payment)
+|
+\#{link_to 'Back', payments_path}

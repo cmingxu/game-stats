@@ -1,0 +1,25 @@
+%h1 Listing payments
+%table
+  %thead
+    %tr
+      %th Amount
+      %th Player
+      %th App
+      %th Locale
+      %th Country
+      %th
+      %th
+      %th
+  %tbody
+    - @payments.each do |payment|
+      %tr
+        %td= payment.amount
+        %td= payment.player_id
+        %td= payment.app_id
+        %td= payment.locale
+        %td= payment.country
+        %td= link_to 'Show', payment
+        %td= link_to 'Edit', edit_payment_path(payment)
+        %td= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Payment', new_payment_path

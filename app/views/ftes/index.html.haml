@@ -1,0 +1,23 @@
+%h1 Listing ftes
+%table
+  %thead
+    %tr
+      %th Player
+      %th Step
+      %th Pass time
+      %th App
+      %th
+      %th
+      %th
+  %tbody
+    - @ftes.each do |fte|
+      %tr
+        %td= fte.player_id
+        %td= fte.step
+        %td= fte.pass_time
+        %td= fte.app_id
+        %td= link_to 'Show', fte
+        %td= link_to 'Edit', edit_fte_path(fte)
+        %td= link_to 'Destroy', fte, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Fte', new_fte_path

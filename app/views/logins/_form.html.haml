@@ -1,0 +1,31 @@
+= form_for(@login) do |f|
+  - if @login.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@login.errors.count, "error")
+        prohibited this login from being saved:
+      %ul
+        - @login.errors.full_messages.each do |msg|
+          %li= msg
+  .field
+    = f.label :player_id
+    %br/
+    = f.number_field :player_id
+  .field
+    = f.label :app_id
+    %br/
+    = f.number_field :app_id
+  .field
+    = f.label :login_at
+    %br/
+    = f.text_field :login_at
+  .field
+    = f.label :locale
+    %br/
+    = f.text_field :locale
+  .field
+    = f.label :country
+    %br/
+    = f.text_field :country
+  .actions
+    = f.submit

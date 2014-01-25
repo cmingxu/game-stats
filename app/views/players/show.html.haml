@@ -1,0 +1,22 @@
+%p#notice= notice
+%p
+  %strong Player:
+  = @player.player_id
+%p
+  %strong Name:
+  = @player.name
+%p
+  %strong Install at:
+  = @player.install_at
+%p
+  %strong Locale:
+  = @player.locale
+%p
+  %strong Language:
+  = @player.language
+%p
+  %strong Country:
+  = @player.country
+= link_to 'Edit', edit_player_path(@player)
+|
+\#{link_to 'Back', players_path}

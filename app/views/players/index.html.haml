@@ -1,0 +1,27 @@
+%h1 Listing players
+%table
+  %thead
+    %tr
+      %th Player
+      %th Name
+      %th Install at
+      %th Locale
+      %th Language
+      %th Country
+      %th
+      %th
+      %th
+  %tbody
+    - @players.each do |player|
+      %tr
+        %td= player.player_id
+        %td= player.name
+        %td= player.install_at
+        %td= player.locale
+        %td= player.language
+        %td= player.country
+        %td= link_to 'Show', player
+        %td= link_to 'Edit', edit_player_path(player)
+        %td= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
+= link_to 'New Player', new_player_path

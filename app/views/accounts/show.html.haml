@@ -1,0 +1,19 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @account.name
+%p
+  %strong Email:
+  = @account.email
+%p
+  %strong Encrypted password:
+  = @account.encrypted_password
+%p
+  %strong Salt:
+  = @account.salt
+%p
+  %strong Role:
+  = @account.role
+= link_to 'Edit', edit_account_path(@account)
+|
+\#{link_to 'Back', accounts_path}

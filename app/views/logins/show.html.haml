@@ -1,0 +1,19 @@
+%p#notice= notice
+%p
+  %strong Player:
+  = @login.player_id
+%p
+  %strong App:
+  = @login.app_id
+%p
+  %strong Login at:
+  = @login.login_at
+%p
+  %strong Locale:
+  = @login.locale
+%p
+  %strong Country:
+  = @login.country
+= link_to 'Edit', edit_login_path(@login)
+|
+\#{link_to 'Back', logins_path}

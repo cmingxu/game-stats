@@ -1,0 +1,16 @@
+%p#notice= notice
+%p
+  %strong Player:
+  = @fte.player_id
+%p
+  %strong Step:
+  = @fte.step
+%p
+  %strong Pass time:
+  = @fte.pass_time
+%p
+  %strong App:
+  = @fte.app_id
+= link_to 'Edit', edit_fte_path(@fte)
+|
+\#{link_to 'Back', ftes_path}
