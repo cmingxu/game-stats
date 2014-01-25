@@ -1,4 +1,4 @@
-class LoginsController < ApplicationController
+class Dashboard::LoginsController < Dashboard::BaseController
   before_action :set_login, only: [:show, :edit, :update, :destroy]
 
   # GET /logins

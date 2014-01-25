@@ -1,6 +1,6 @@
  -  models setup & model relationship [DONE]
- -  key stats investigation
- -  fake data input
+ -  key stats investigation           [DONE]
+ -  fake data input                   [DONE]
  -  frontend frameworks finialization
  -  amazon environment setup / domain name setup
  -  app config / secret

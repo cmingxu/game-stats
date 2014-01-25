@@ -1,4 +1,4 @@
-class PaymentsController < ApplicationController
+class Dashboard::PaymentsController < Dashboard::BaseController
   before_action :set_payment, only: [:show, :edit, :update, :destroy]
 
   # GET /payments

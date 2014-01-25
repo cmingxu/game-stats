@@ -27,6 +27,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.1)
     atomic (1.1.14)
+    awesome_print (1.2.0)
     builder (3.1.4)
     capistrano (3.1.0)
       i18n
@@ -45,6 +46,11 @@ GEM
     execjs (2.0.2)
     haml (4.1.0.beta.1)
       tilt
+    haml-rails (0.5.3)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 3.1, < 5.0)
+      railties (>= 4.0.1)
     hike (1.2.3)
     hpricot (0.8.6)
     html2haml (1.0.1)
@@ -143,9 +149,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   capistrano
   coffee-rails (~> 4.0.0)
   erb2haml
+  haml-rails
   jbuilder (~> 1.2)
   jquery-rails
   mysql2

@@ -1,4 +1,4 @@
-class FtesController < ApplicationController
+class Dashboard::FtesController < Dashboard::BaseController
   before_action :set_fte, only: [:show, :edit, :update, :destroy]
 
   # GET /ftes

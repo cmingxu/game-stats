@@ -1,4 +1,4 @@
-class AppsController < ApplicationController
+class Dashboard::AppsController < Dashboard::BaseController
   before_action :set_app, only: [:show, :edit, :update, :destroy]
 
   # GET /apps
