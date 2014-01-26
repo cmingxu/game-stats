@@ -20,6 +20,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'bootstrap-sass'
+
 gem 'unicorn'
 
 gem 'capistrano', group: :development
